@@ -159,7 +159,7 @@ def sendToFolder(package):
                 os.chdir(wholeFile)
                 writer = open(f'_{userName} Summary.txt', 'a')
                 writer.write('[' + package[1][element] + '] ' + unidecode.unidecode(package[0][element]).replace('IMAGE123123', '') + '\n')
-                writer.write('https://drawception.com' + package[2][element] + '\n\n')
+                writer.write(package[2][element] + '\n\n')
                 writer.close()
 
             # If the name denotes it's a caption, and captionCondition is True, store caption's corresponding image
